@@ -244,9 +244,13 @@ a {
   font-size: 4vw;
 }
 
+.wrapper {
+  margin: 5%;
+}
+
 .container {
   display: grid;
-  padding: 5% 5%;
+  /* padding: 5% 5%; */
   grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
   grid-template-rows: 1fr 1fr;
   column-gap: 8%;
@@ -319,6 +323,10 @@ a {
     height: 80%;
   }
 
+  .item {
+    margin: 10px 0;
+  }
+
 }
 
 /* IPHONE SE, IPHONE XR, PIXEL 5 */
@@ -345,6 +353,9 @@ a {
     height: 80%;
   }
 
+  .item {
+    margin: 10px 0;
+  }
 }
 
 /* SAMSUNG GALAXY S8+ */
@@ -370,6 +381,10 @@ a {
     width: 100%;
     height: 100%;
   }
+
+  .item {
+    margin: 10px 0;
+  }
 }
 
 @media screen and (max-width:320px) {
@@ -377,7 +392,7 @@ a {
     display: block;
   }
 
-  .footer ul {
-    padding: 0;
+  .item {
+    margin: 10px 0;
   }
 }
