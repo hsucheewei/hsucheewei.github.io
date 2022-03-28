@@ -1,3 +1,4 @@
+//Burger Menu 
 function burgerMenu() {
   var x = document.getElementById("mobileLinks");
   if (x.style.display === "block") {
@@ -120,6 +121,7 @@ function commentupdate_4(val4) {
 
 
 /*Comment Pop-up*/
+//Recipe 1 Pop up
 function openForm() {
   document.getElementById("form").style.display = "block";
 }
@@ -139,6 +141,7 @@ function submitForm() {
   }
 }
 
+//Recipe 2 Pop up
 function openForm_2() {
   document.getElementById("form2").style.display = "block";
 }
@@ -158,6 +161,7 @@ function submitForm_2() {
   }
 }
 
+//Recipe 3 Pop up
 function openForm_3() {
   document.getElementById("form3").style.display = "block";
 }
@@ -177,6 +181,7 @@ function submitForm_3() {
   }
 }
 
+//Recipe 4 Pop up
 function openForm_4() {
   document.getElementById("form4").style.display = "block";
 }

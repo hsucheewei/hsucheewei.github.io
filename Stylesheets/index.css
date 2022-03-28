@@ -222,6 +222,7 @@ a {
   visibility: hidden;
 }
 
+/* Show text when hover */
 .banner:hover .banner-text {
   visibility: visible;
   opacity: 1;
@@ -250,7 +251,6 @@ a {
 
 .container {
   display: grid;
-  /* padding: 5% 5%; */
   grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
   grid-template-rows: 1fr 1fr;
   column-gap: 8%;
@@ -390,7 +390,7 @@ a {
 @media screen and (max-width:320px) {
   .container {
     display: block;
-  }
+  }s
 
   .item {
     margin: 10px 0;

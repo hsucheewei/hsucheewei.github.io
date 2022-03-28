@@ -14,6 +14,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+//Burger Menu
 function burgerMenu() {
   var x = document.getElementById("mobileLinks");
   if (x.style.display === "block") {

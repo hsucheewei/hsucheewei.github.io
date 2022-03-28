@@ -1,3 +1,4 @@
+// Burger Menu
 function burgerMenu() {
     var x = document.getElementById("mobileLinks");
     if (x.style.display === "block") {
@@ -7,7 +8,7 @@ function burgerMenu() {
     }
   }
   
-
+// Toggle Show More/Less Articles
 $("#show-hide").click(function () {
 
     $(".hidden").slideToggle();

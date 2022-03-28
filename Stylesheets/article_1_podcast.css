@@ -254,10 +254,6 @@ a {
   height: min-content;
 }
 
-iframe {
-  overflow: hidden;
-}
-
 /* MEDIA QUERIES FOR MOBILE DEVICES */
 /* IPHONE 12 PRO, SAMSUNG GALAXY S20 ULTRA */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {

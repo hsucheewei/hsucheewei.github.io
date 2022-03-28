@@ -210,6 +210,7 @@ a {
     background-color: #bab2b5;
 }
 
+/* Embedded google map */
 .map {
     text-align: center;
     padding: 10px 0;
@@ -276,7 +277,6 @@ a {
     right: 0;
     left: 0;
     right: 0;
-    transition: ease-out 0.2s;
     padding: 15px 0;
 }
 
