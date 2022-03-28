@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" type="text/css" href="Stylesheets/article_4_food.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@800&family=Noto+Serif+Display:ital,wght@1,800&family=Oswald:wght@300;400&family=Noto+Serif+Display:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Main Page Button -->
+        <div class="nav-container">
+            <div class="logo" id="logo-home">
+                <a href="index.html" id="homepage">head over meals.</a>
+            </div>
+            <a href="javascript:void(0);" class="burger" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navigationbar" id="navbar">
+            <a href="article_1_podcast.html" id="navbar-podcast">PODCAST</a>
+            <a href="article_2_reviews.html" id="navbar-reviews">REVIEWS</a>
+            <a href="article_3_recipes.html" id="navbar-recipes">RECIPES</a>
+            <a href="article_4_food.html" id="navbar-food">FOOD</a>
+            <a href="article_5_explore.html" id="navbar-tour">TOUR</a>
+            <a href="report.html" id="navbar-report">REPORT</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Hamburger Navigation Bar -->
+    <div class="mobilenav">
+        <div id="mobileLinks">
+            <a href="article_1_podcast.html" id="navbar-podcast">PODCAST</a>
+            <a href="article_2_reviews.html" id="navbar-reviews">REVIEWS</a>
+            <a href="article_3_recipes.html" id="navbar-recipes">RECIPES</a>
+            <a href="article_4_food.html" id="navbar-food">FOOD</a>
+            <a href="article_5_explore.html" id="navbar-tour">TOUR</a>
+            <a href="report.html" id="navbar-report">REPORT</a>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- Food Article Banner -->
+        <h2 class="food-banner">
+            TOP 7 RESTAURANTS IN TOWN YOU NEED TO TRY
+        </h2>
+
+        <section class="main-content" id="main">
+
+            <!-- Side column featuring other articles -->
+            <div class="side-column-container">
+
+                <div class="popular-articles">
+                    <h3>POPULAR ARTICLES</h3>
+                    <div class="side-article">
+                        <div class="side-img-container">
+                            <img src="images/index/article2image.jpg" width="300px" height="200px">
+                        </div>
+                        <a href="article_2_reviews.html">
+                            <h4>Kooks Creamery Review: Burst Of Flavors</h4>
+                        </a>
+                    </div>
+
+                    <div class="side-article">
+                        <div class="side-img-container">
+                            <img src="images/index/article3image.jpg" width="300px" height="200px">
+                        </div>
+                        <a href="article_3_recipes.html">
+                            <h4>4 Easy Must-Try Recipes You Can Make At Home</h4>
+                        </a>
+                    </div>
+
+                    <div class="side-article">
+                        <div class="side-img-container">
+                            <img src="images/index/article2image.jpg" width="300px" height="200px">
+                        </div>
+                        <a href="article_5_explore.html">
+                            <h4>Explore Singaporean Food With A Food Tour</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1/7 of restaurants in article -->
+            <div class="trending-container">
+                <div class="trending">
+                    <h3>TRENDING</h3>
+                    <div class="trending-img-container">
+                        <img src="images/article4/odette.jpg" width="750px" height="500px">
+                    </div>
+                    <a href="#">
+                        <h2>Odette at National Gallery Singapore: Ranked 2nd in Asia's 50 Best Restaurants 2021</h2>
+                    </a>
+                    <p>This two Michelin-starred restaurant is considered one of the best dining experiences on
+                        Earth.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2/7 Restaurant -->
+            <div class="articles">
+                <div class="article-img-container">
+                    <img src="images/article4/1atico.jpg" width="450px" height="300px">
+                </div>
+                <a href="#">
+                    <h4 class="article-title">1-Atico at ION Orchard: Panoramic View In The Heart Of Orchard</h4>
+                </a>
+                <p>Coming alive at night, ATICO transforms into a radical futuristic playground. Visual compositions
+                    crowns
+                    the space, devoted to creating a surreal, immersive and psychedelic experience.</p>
+            </div>
+
+            <!-- 3/7 Restaurant -->
+            <div class="articles">
+                <div class="article-img-container">
+                    <img src="images/article4/lavo.png" width="450px" height="300px">
+                </div>
+                <a href="#">
+                    <h4 class="article-title">LAVO at Marina Bay Sands: Italian Restaurant and Rooftop Bar</h4>
+                </a>
+                <p>Offering spectacular rooftop views of the city and a luxurious lounge, this award-winning
+                    Italian-American restaurant transforms into the perfect venue to take in the glow of the city at
+                    dusk.</p>
+            </div>
+
+            <!-- Restaurants below are hidden -->
+            <!-- 4/7 Restaurant -->
+            <div class="articles hidden">
+                <div class="article-img-container">
+                    <img src="images/article4/ushio.jpg" width="450px" height="300px">
+                </div>
+                <a href="#">
+                    <h4 class="article-title">USHIO Sumiyaki & Sake Bar at OUE Tower</h4>
+                </a>
+                <p>Nestled within the grandeur structure of OUE Tower is USHIO. Its name inspired by the pristine water
+                    that separates its location and Marina Bayfront, translates to “tide”. In the same fashion, it sees
+                    the necessity to go on a relentless pursuit to ride the waves of opportunity and trends.</p>
+            </div>
+
+            <!-- 5/7 Restaurant -->
+            <div class="articles hidden">
+                <div class="article-img-container">
+                    <img src="images/article4/dusk.jpg" width="450px" height="300px">
+                </div>
+                <a href="#">
+                    <h4 class="article-title">Dusk Restaurant & Bar at Mount Faber: European Tapas and Cocktails</h4>
+                </a>
+                <p>At 100 metres above sea level surrounded by lush rainforest, Dusk Restaurant & Bar is the perfect
+                    vantage point for panoramic views of HarbourFront & Sentosa Island. From romantic date nights and
+                    casual get-togethers, Dusk is the perfect alfresco hotspot to be at.</p>
+            </div>
+
+            <!-- 6/7 Restaurant -->
+            <div class="articles hidden">
+                <div class="article-img-container">
+                    <img src="images/article4/vue.jpg" width="450px" height="300px">
+                </div>
+                <a href="#">
+                    <h4 class="article-title">VUE at OUE Bayfront: Stunning City Views and Fusion Food</h4>
+                </a>
+                <p>Perched atop OUE Bayfront on Collyer Quay, VUE presents a chef-driven menu that emphasises
+                    binchotan-grilled specialities at the heart of its cuisine offerings, complemented by a versatile
+                    selection of wines. VUE is also home to Singapore's first rooftop spritz bar, further setting itself
+                    apart from other dining destinations around town.</p>
+            </div>
+
+            <!-- 7/7 Restaurant -->
+            <div class="articles hidden">
+                <div class="article-img-container">
+                    <img src="images/article4/celavi.jpg" width="450px" height="300px">
+                </div>
+                <a href="#">
+                    <h4 class="article-title">CÉ LA VI at Marina Bay Sands: Rooftop Dining, Sky Bar and Lounge</h4>
+                </a>
+                <p>Enjoy panoramic views at the top of MBS with exquisite dishes of the highest quality from the
+                    restaurant's menu which includes Grilled Fremantle Octopus in Taiwanese glaze, Black Truffle "Sushi
+                    Rice" Risotto, Salted Egg Tasmanian Salmon and many more Asian fusion dishes.</p>
+            </div>
+
+            <!-- Button to show/hide hidden restaurants -->
+            <button type="button" id="show-hide">SHOW MORE ARTICLES</button>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column" id="column-1">
+            <li>
+                <ul id="footer-logo">
+                    <a href="index.html">head over meals.</a>
+                </ul>
+                <ul>
+                    <a href="#">ABOUT US</a>
+                </ul>
+                <ul>
+                    <a href="#">OFFICIAL PARTNERS</a>
+                </ul>
+                <ul>
+                    <a href="#">FAQ</a>
+                </ul>
+                <ul>
+                    <a href="#">CONTACT US</a>
+                </ul>
+                <ul>
+                    <a href="#">DOWNLOAD OUR APP</a>
+                </ul>
+            </li>
+        </div>
+
+        <div class="footer-column" id="footer-column-2">
+            <ul>
+                <a href="#">TERMS & CONDITIONS</a>
+            </ul>
+            <ul>
+                <a href="#">PRIVACY POLICY</a>
+            </ul>
+            <ul>
+                <a href="#">COOKIES POLICY</a>
+            </ul>
+        </div>
+
+        <div class="footer-column" id="footer-column-3">
+            <ul>
+                SUBSCRIBE TO OUR NEWSLETTER
+            </ul>
+            <ul>
+                <form action="#">
+                    <label for="newsletter-email">Email:</label>
+                    <input type="text" id="email"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </ul>
+            <ul>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </ul>
+        </div>
+    </footer>
+    <script src="Javascript/article_4_food.js"></script>
+
+</body>
+
+</html>
