@@ -122,7 +122,6 @@ footer {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* align-items: center; */
   background-color: #123c69;
   color: white;
   font-family: "Oswald";
@@ -136,13 +135,21 @@ footer {
   margin: 0;
 }
 
+footer ul {
+  list-style: none;
+}
+
 footer ul a {
   color: white;
 }
 
+footer li {
+  padding: 5px 0;
+}
+
 @media screen and (max-width:800px) {
   footer {
-    grid-template-columns: 1fr;
+    display: block;
   }
 }
 

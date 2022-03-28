@@ -122,7 +122,6 @@ footer {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* align-items: center; */
     background-color: #123c69;
     color: white;
     font-family: "Oswald";
@@ -136,13 +135,21 @@ footer {
     margin: 0;
 }
 
+footer ul {
+    list-style: none;
+}
+
 footer ul a {
     color: white;
 }
 
+footer li {
+    padding: 5px 0;
+}
+
 @media screen and (max-width:800px) {
     footer {
-        grid-template-columns: 1fr;
+        display: block;
     }
 }
 
@@ -471,37 +478,22 @@ a {
 
 /* MEDIA QUERIES FOR MOBILE DEVICES */
 /* IPHONE 12 PRO, SAMSUNG GALAXY S20 ULTRA */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-      .recipe img {
-          height: 40vw;
-      }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .recipe img {
+        height: 40vw;
+    }
 }
 
 /* IPHONE SE, IPHONE XR, PIXEL 5 */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .recipe img {
         height: 40vw;
     }
 }
 
 /* SAMSUNG GALAXY S8+ */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .recipe img {
         height: 40vw;
     }
 }
-
-
-  
