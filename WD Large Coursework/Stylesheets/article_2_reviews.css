@@ -1,0 +1,424 @@
+:root {
+    --main-color: #eee2dc;
+    --navbar-color: #edc7b7;
+}
+
+/*LOGO*/
+.logo {
+    padding: 2vh;
+    align-self: center;
+    margin: 0 auto;
+    background-color: #edc7b7;
+    transition: 0.3s;
+}
+
+#homepage {
+    font-family: "Noto Serif Display", serif;
+    font-size: 5vw;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+}
+
+#homepage:hover {
+    border-bottom: 1px solid black;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #bab2b5;
+}
+
+.navigationbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+.navigationbar a {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: vw;
+}
+
+.nav-container {
+    display: flex;
+    background-color: #edc7b7;
+}
+
+#mobileLinks {
+    display: none;
+    background-color: #edc7b7;
+    text-align: center;
+}
+
+.mobilenav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Oswald";
+    font-size: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+    border-bottom: 0.5px solid rgba(50, 50, 50, 0.1);
+}
+
+.burger {
+    color: black;
+    position: relative;
+    align-self: center;
+    display: none;
+}
+
+
+@media screen and (max-width:800px) {
+    .navigationbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        padding: 2vw 2vw 2vw 10vw;
+    }
+}
+
+/*remove space between nav bar and body*/
+body {
+    margin: 0;
+    background-color: #eee2dc;
+}
+
+/*header styles*/
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Oswald";
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+/*highlight button when hovering*/
+nav a:hover {
+    background-color: #ac3b61;
+    color: white;
+}
+
+/* Add a background color to the top navigation */
+.navigationbar {
+    background-color: var(--navbar-color);
+    overflow: hidden;
+}
+
+/*===================================================*/
+
+/*FOOTER*/
+footer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: center; */
+    background-color: #123c69;
+    color: white;
+    font-family: "Oswald";
+    padding: 2em 0;
+}
+
+#footer-logo {
+    font-family: "Noto Serif Display", serif;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 0;
+}
+
+footer ul a {
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* social media icons */
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* remove underline for all links */
+a {
+    text-decoration: none;
+}
+
+/*BANNER*/
+.review-banner {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-color: #123c69;
+    margin: 0;
+    font-family: "Noto Serif Display";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+/* .review {
+    margin: 3em 0;
+} */
+
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 56.25%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+/*ACCORDION*/
+.accordion {
+    width: 80%;
+    margin: 0 auto 2% auto;
+    background-color: #bab2b5;
+}
+
+.accordion h1 {
+    font-family: "Noto Serif Display";
+    font-weight: lighter;
+    font-size: 2.2em;
+    padding: 10px 18px;
+    margin: 0;
+    color: white;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.category {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Oswald";
+    font-size: 1.3em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.category:hover {
+    background-color: #ccc;
+}
+
+/* Style the panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel li {
+    width: 100%;
+    display: flex;
+    float: left;
+    padding: 10px 0;
+}
+
+.product-image {
+    width: 30%;
+}
+
+.product-info {
+    width: 75%;
+    margin: 10px auto;
+    padding: 0 20px;
+    font-family: "Oswald";
+    font-size: 25px;
+}
+
+.product-name {
+    margin: 0 auto;
+    font-family: "Noto Serif Display";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.product-desc {
+    font-size: 16px;
+    font-family: "Oswald";
+    font-weight: 300;
+}
+
+/* Accordion icons*/
+.category:after {
+    content: '\0276F';
+    /* Unicode character for "plus" sign (+) */
+    transform: rotate(90deg);
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.active:after {
+    content: "\0276F";
+    /* Unicode character for "minus" sign (-) */
+    transform: rotate(-90deg);
+}
+
+/*Overview*/
+.overview {
+    width: 80%;
+    margin: 2% auto;
+    background-color: #bab2b5;
+}
+
+.overview h1 {
+    font-family: "Noto Serif Display";
+    font-weight: lighter;
+    font-size: 2.2em;
+    padding: 10px 18px;
+    margin: 0;
+    color: white;
+}
+
+.summary {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Oswald";
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.summary-titles {
+    font-weight: normal;
+}
+
+.pros-cons-columns {
+    display: flex;
+    margin-top: 5px;
+}
+
+.pros-cons {
+    width: 50%;
+    margin: 5px;
+    padding: 2px 7px;
+    border-style: solid;
+    border-color: #bab2b5;
+}
+
+.pros-cons ul {
+    font-weight: 100;
+    margin: 5px auto;
+}
+
+.location {
+    margin-top: 10px;
+}
+
+.address {
+    margin-top: 10px;
+}
+
+.map {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    .panel li {
+        display: block;
+        padding: 15px 0 0 0;
+        border-bottom: 0.5px solid rgba(50, 50, 50, 0.1);
+    }
+
+    .product-info {
+        width: 100%;
+        margin: 10px 0 10px 0;
+        padding: 0;
+        font-family: "Oswald";
+        font-size: 25px;
+    }
+
+    .pros-cons-columns {
+        display: block;
+        margin: 5px auto 0 auto;
+    }
+
+    .pros-cons {
+        width: 90%;
+        margin: 5px;
+        padding: 2px 7px;
+        border-style: solid;
+        border-color: #bab2b5;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    #price {
+        margin: 0;
+    }
+}

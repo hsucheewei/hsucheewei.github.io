@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" type="text/css" href="Stylesheets/article_3_recipes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@800&family=Noto+Serif+Display:ital,wght@1,800&family=Oswald:wght@300;400&family=Noto+Serif+Display:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Main Page Button -->
+        <div class="nav-container">
+            <div class="logo" id="logo-home">
+                <a href="index.html" id="homepage">head over meals.</a>
+            </div>
+            <a href="javascript:void(0);" class="burger" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navigationbar" id="navbar">
+            <a href="article_1_podcast.html" id="navbar-podcast">PODCAST</a>
+            <a href="article_2_reviews.html" id="navbar-reviews">REVIEWS</a>
+            <a href="article_3_recipes.html" id="navbar-recipes">RECIPES</a>
+            <a href="article_4_food.html" id="navbar-food">FOOD</a>
+            <a href="article_5_explore.html" id="navbar-tour">TOUR</a>
+            <a href="report.html" id="navbar-report">REPORT</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Hamburger Navigation Bar -->
+    <div class="mobilenav">
+        <div id="mobileLinks">
+            <a href="article_1_podcast.html" id="navbar-podcast">PODCAST</a>
+            <a href="article_2_reviews.html" id="navbar-reviews">REVIEWS</a>
+            <a href="article_3_recipes.html" id="navbar-recipes">RECIPES</a>
+            <a href="article_4_food.html" id="navbar-food">FOOD</a>
+            <a href="article_5_explore.html" id="navbar-tour">TOUR</a>
+            <a href="report.html" id="navbar-report">REPORT</a>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- Recipes Article Banner -->
+        <div class="recipes-banner">
+
+            <h2 class="recipes-banner-title">
+                4 Easy Must Try Recipes To Make At Home
+            </h2>
+
+            <div class="intro">
+                <p>
+                    A pandemic changes everything, especially the way we look at food. In the Covid-19 era we're
+                    shopping for two weeks at a time, cooking in big batches, and leaning like never before on beans,
+                    pasta, and cookies (lots of cookies). And while some of us are diving into projects like sourdough,
+                    and others are leaning on 15-minute dinners, one thing is universal: we're all in the kitchen more
+                    than ever, and we're relying on the recipes and resources below while we're there.
+                </p>
+            </div>
+
+        </div>
+
+        <section class="main-content" id="main">
+
+            <div class="recipes">
+
+                <!-- RECIPE 1 -->
+                <div class="recipe" id="recipe-1">
+
+                    <!-- Recipe Image -->
+                    <img src="images/article3/recipe1.jpg" alt="Image not found">
+
+                    <!-- Like and Comment Buttons -->
+                    <div class="post-interaction">
+                        <!-- Like Button -->
+                        <div class="interactbtns" id="like-area">
+                            <div onclick="likeinc_1()" class="fa fa-thumbs-up" id="like-button"></div>
+                            <div class="count" id="lcount1">0</div>
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="comment">
+                            <!-- Button to open comment pop up -->
+                            <div class="interactbtns" id="comment-area">
+                                <button onclick="openForm()" class="fa fa-comment" id="comment-button"></button>
+                                <div class="count" id="ccount1">0</div>
+                            </div>
+
+                            <!-- Pop up -->
+                            <div class="comment-popup" id="form">
+                                <div class="comment-form">
+
+                                    <!-- Button to close comment pop up -->
+                                    <button type="button" class="fa fa-window-close" onclick="closeForm()"></button>
+
+                                    <h4>Comment</h4>
+                                    <label for="msg">Leave a comment for this recipe</label>
+
+                                    <!-- Comment text box -->
+                                    <textarea id="textbox" placeholder="Type here..." name="msg" required></textarea>
+
+                                    <!--Alert shows if field is empty-->
+                                    <div class="alert" id="alert1">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                        Please fill in the required fields
+                                    </div>
+
+                                    <!-- Button to submit comment -->
+                                    <button onclick="submitForm()" class="send">Send</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button to show/hide recipe instructions -->
+                    <button type="button" class="collapsible">
+                        <h2>PARMESAN ROASTED POTATOES</h2>
+                    </button>
+
+                    <!-- Recipe Details -->
+                    <div class="content">
+                        <h4><i class="fa fa-clock-o" aria-hidden="true"></i>ESTIMATED TIME: 60 min</h4>
+                        <h3>INGREDIENTS</h3>
+                        <ul class="list">
+                            <li>2 lbs. red potatoes</li>
+                            <li>2 Tbsp olive oil </li>
+                            <li>1/3 cup grated Parmesan</li>
+                            <li>1/2 tsp garlic powder</li>
+                            <li>1/2 tsp paprika</li>
+                            <li>1/4 tsp salt</li>
+                            <li>1/4 tsp Freshly cracked black pepper</li>
+                            <li>2 Tbsp chopped fresh parsley (optional)</li>
+                        </ul>
+
+                        <h3>INSTRUCTIONS</h3>
+                        <ol class="list" id="ingredients">
+                            <li>Preheat the oven to 400ºF. Wash the potatoes, then cut into 1-inch pieces. Place the
+                                chopped potatoes in a large bowl.</li>
+                            <li>In a small bowl, stir together the grated Parmesan, garlic powder, paprika, salt, and
+                                pepper.</li>
+                            <li>Drizzle the olive oil over the potatoes, then toss to coat. Sprinkle the Parmesan
+                                mixture over the potatoes, then toss to coat again.</li>
+                            <li>Spread the potatoes out over a large baking sheet (lined with parchment for easy
+                                cleanup, if desired) with cut sides facing down.</li>
+                            <li>Roast the potatoes in the oven for 30 minutes then give them a good stir. Return the
+                                potatoes to the oven and roast for an additional 5-10 minutes, or until well browned.
+                            </li>
+                            <li>Season the potatoes with another pinch of salt, if desired, then garnish with parsley
+                                and serve.</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <!-- RECIPE 2 -->
+                <div class="recipe" id="recipe-2">
+
+                    <!-- Recipe Image -->
+                    <img src="images/article3/recipe2.jpg" width="100%" height="300vw" alt="Image not found">
+
+                    <!-- Like and Comment Buttons -->
+                    <div class="post-interaction">
+                        <!-- Like Button -->
+                        <div class="interactbtns" id="like-area">
+                            <div onclick="likeinc_2()" class="fa fa-thumbs-up" id="like-button"></div>
+                            <div class="count" id="lcount2">0</div>
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="comment">
+                            <!-- Button to open comment pop up -->
+                            <div class="interactbtns" id="comment-area">
+                                <button onclick="openForm_2()" class="fa fa-comment" id="comment-button"></button>
+                                <div class="count" id="ccount2">0</div>
+                            </div>
+
+                            <!-- Pop up -->
+                            <div class="comment-popup" id="form2">
+                                <div class="comment-form">
+
+                                    <!-- Button to close comment pop up -->
+                                    <button type="button" class="fa fa-window-close" onclick="closeForm_2()"></button>
+
+                                    <h4>Comment</h4>
+                                    <label for="msg">Leave a comment for this recipe</label>
+
+                                    <!-- Comment text box -->
+                                    <textarea id="textbox2" placeholder="Type here..." name="msg" required></textarea>
+
+                                    <!--Alert shows if field is empty-->
+                                    <div class="alert" id="alert2">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                        Please fill in the required fields
+                                    </div>
+
+                                    <!-- Button to submit comment -->
+                                    <button onclick="submitForm_2()" class="send">Send</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button to show/hide recipe instructions -->
+                    <button type="button" class="collapsible">
+                        <h2>MINI PUMPKIN PIES</h2>
+                    </button>
+
+                    <!-- Recipe Details -->
+                    <div class="content">
+                        <h4><i class="fa fa-clock-o" aria-hidden="true"></i>ESTIMATED TIME: 60 min</h4>
+                        <h3>INGREDIENTS</h3>
+                        <h5>CRUST</h5>
+                        <ul class="list">
+                            <li>8 Tbsp salted butter, room temperature </li>
+                            <li>4 oz. cream cheese, room temperature</li>
+                            <li>1 cup + 2 Tbsp flour</li>
+                            <li>1 Tbsp granulated sugar</li>
+                        </ul>
+                        <h5>FILLING</h5>
+                        <ul class="list">
+                            <li>1/2 15oz. canned pumpkin (⅞ cup)</li>
+                            <li>3/4 cup evaporated milk</li>
+                            <li>1 egg</li>
+                            <li>1/4 granulated sugar</li>
+                            <li>2 Tbsp brown sugar</li>
+                            <li>1/2 tsp ground cinnamon </li>
+                            <li>1/4 tsp ground ginger</li>
+                            <li>1/4 tsp ground nutmeg</li>
+                            <li>1/4 tsp salt</li>
+                        </ul>
+
+                        <h3>INSTRUCTIONS</h3>
+                        <ol class="list" id="ingredients">
+                            <li>Preheat the oven to 350ºF. Make the pie crust first. Add the butter and cream cheese to
+                                a bowl and use a mixer to beat them together until light and fluffy.</li>
+                            <li>Beat 1 Tbsp sugar into the butter and cream cheese, then begin to beat in the flour,
+                                about ¼ cup at a time, until all of it has been incorporated. The result will be a very
+                                soft dough.</li>
+                            <li>Divide the dough into four equal pieces, then divide each piece into three so you have
+                                12 equal-sized pieces total. Roll each piece of dough into a ball, then drop each one
+                                into the well of a muffin tin. Use your fingers to press the dough down into the center
+                                and up the sides of the wells.</li>
+                            <li>Next, make the pie filling. In a large bowl, whisk together the pumpkin purée,
+                                evaporated milk, egg, sugar, brown sugar, cinnamon, ginger, nutmeg, and salt.</li>
+                            <li>Divide the filling between the twelve pie shells (about 3 Tbsp each).</li>
+                            <li>Bake the pies for 35 minutes, or until the edges of the pie crusts are golden and the
+                                filling is slightly cracked on top.</li>
+                            <li>Remove the muffin tin from the oven and allow the pies to cool in the tin for about 10
+                                minutes. After about 10 minutes they should be solid enough to safely remove. Slide a
+                                knife around the outer edge of each one until they pop out. Finish cooling the pies on a
+                                wire rack.</li>
+                            <li>Serve the pies at room temperature, or transfer them to the refrigerator once cooled for
+                                longer storage (up to four days).</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <!-- RECIPE 3 -->
+                <div class="recipe" id="recipe-3">
+
+                    <!-- Recipe Image -->
+                    <img src="images/article3/recipe3.jpg" width="100%" height="300vw" alt="Image not found">
+
+                    <!-- Like and Comment Buttons -->
+                    <div class="post-interaction">
+                        <!-- Like Button -->
+                        <div class="interactbtns" id="like-area">
+                            <div onclick="likeinc_3()" class="fa fa-thumbs-up" id="like-button"></div>
+                            <div class="count" id="lcount3">0</div>
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="comment">
+                            <!-- Button to open comment pop up -->
+                            <div class="interactbtns" id="comment-area">
+                                <button onclick="openForm_3()" class="fa fa-comment" id="comment-button"></button>
+                                <div class="count" id="ccount3">0</div>
+                            </div>
+
+                            <!-- Pop up -->
+                            <div class="comment-popup" id="form3">
+                                <div class="comment-form">
+
+                                    <!-- Button to close comment pop up -->
+                                    <button type="button" class="fa fa-window-close" onclick="closeForm_3()"></button>
+
+                                    <h4>Comment</h4>
+                                    <label for="msg">Leave a comment for this recipe</label>
+
+                                    <!-- Comment text box -->
+                                    <textarea id="textbox3" placeholder="Type here..." name="msg" required></textarea>
+
+                                    <!--Alert shows if field is empty-->
+                                    <div class="alert" id="alert3">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                        Please fill in the required fields
+                                    </div>
+
+                                    <!-- Button to submit comment -->
+                                    <button onclick="submitForm_3()" class="send">Send</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button to show/hide recipe instructions -->
+                    <button type="button" class="collapsible">
+                        <h2>PUMPKIN SMOOTHIE</h2>
+                    </button>
+
+                    <!-- Recipe Details -->
+                    <div class="content">
+                        <h4><i class="fa fa-clock-o" aria-hidden="true"></i>ESTIMATED TIME: 5 min</h4>
+                        <h3>INGREDIENTS</h3>
+                        <ul class="list" id="ingredients">
+                            <li>1/3 cup pumpkin purée</li>
+                            <li>1 frozen banana</li>
+                            <li>1 Tbsp ground flaxseed</li>
+                            <li>1/4 tsp pumpkin pie spice</li>
+                            <li>1 cup milk</li>
+                            <li>1/4 tsp vanilla extract</li>
+                            <li>1 tsp brown sugar</li>
+                        </ul>
+
+                        <h3>INSTRUCTIONS</h3>
+                        <ol class="list" id="ingredients">
+                            <li>Add the pumpkin, frozen banana, flaxseed, pumpkin pie spice, milk, and vanilla in a
+                                blender. Blend until smooth.</li>
+                            <li>Add the brown sugar (or sweetener of choice) and blend again. Taste and adjust the
+                                sweetness to your liking. Enjoy cold.</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <!-- RECIPE 4 -->
+                <div class="recipe" id="recipe-4">
+
+                    <!-- Recipe Image -->
+                    <img src="images/article3/recipe4.jpg" width="100%" height="300vw" alt="Image not found">
+
+                    <!-- Like and Comment Buttons -->
+                    <div class="post-interaction">
+                        <!-- Like Button -->
+                        <div class="interactbtns" id="like-area">
+                            <div onclick="likeinc_4()" class="fa fa-thumbs-up" id="like-button"></div>
+                            <div class="count" id="lcount4">0</div>
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="comment">
+                            <!-- Button to open comment pop up -->
+                            <div class="interactbtns" id="comment-area">
+                                <button onclick="openForm_4()" class="fa fa-comment" id="comment-button"></button>
+                                <div class="count" id="ccount4">0</div>
+                            </div>
+
+                            <!-- Pop up -->
+                            <div class="comment-popup" id="form4">
+                                <div class="comment-form">
+
+                                    <!-- Button to close comment pop up -->
+                                    <button type="button" class="fa fa-window-close" onclick="closeForm_4()"></button>
+
+                                    <h4>Comment</h4>
+                                    <label for="msg">Leave a comment for this recipe</label>
+
+                                    <!-- Comment text box -->
+                                    <textarea id="textbox4" placeholder="Type here..." name="msg" required></textarea>
+
+                                    <!--Alert shows if field is empty-->
+                                    <div class="alert" id="alert4">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                        Please fill in the required fields
+                                    </div>
+
+                                    <!-- Button to submit comment -->
+                                    <button onclick="submitForm_4()" class="send">Send</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button to show/hide recipe instructions -->
+                    <button type="button" class="collapsible">
+                        <h2>ONE POT VEGGIE PASTA</h2>
+                    </button>
+
+                    <!-- Recipe Details -->
+                    <div class="content">
+                        <h4><i class="fa fa-clock-o" aria-hidden="true"></i>ESTIMATED TIME: 30 min</h4>
+                        <h3>INGREDIENTS</h3>
+                        <ul class="list" id="ingredients">
+                            <li>2 cloves garlic</li>
+                            <li>1 yellow onion</li>
+                            <li>2 carrots</li>
+                            <li>2 Tbsp olive oil</li>
+                            <li>8 oz. mushrooms</li>
+                            <li>1 zucchini</li>
+                            <li>1 red bell pepper</li>
+                            <li>1/2 lb. rotini</li>
+                            <li>1/2 tsp dried basil</li>
+                            <li>1/2 tsp dried oregano</li>
+                            <li>2 cups vegetable broth</li>
+                            <li>24 oz. psata sauce</li>
+                            <li>4 oz. shredded mozzarella</li>
+                        </ul>
+
+                        <h3>INSTRUCTIONS</h3>
+                        <ol class="list" id="ingredients">
+                            <li>Mince the garlic, dice the onion, and slice the carrots. Add the garlic, onion, and
+                                carrots to a large pot with the olive oil. Sauté over medium heat until the onions are
+                                soft and translucent.</li>
+                            <li>While the vegetables are sautéing, slice the mushrooms. Once sliced, add them to the pot
+                                with the other vegetables and continue sautéing.</li>
+                            <li>While the rest of the vegetables are sautéing, dice the zucchini and bell pepper.</li>
+                            <li>Once the bell pepper and zucchini are diced, add them to the pot along with the rotini,
+                                basil, oregano, and vegetable broth. Stir to combine. It's okay if the broth doesn't
+                                fully submerge the pasta.</li>
+                            <li>Place a lid on the pot, turn the heat up to medium-high, and allow the broth to come up
+                                to a boil.</li>
+                            <li>Once the broth reaches a full boil, give the pasta a quick stir, replace the lid, then
+                                turn the heat down to medium-low. Let the pasta simmer over medium-low, stirring
+                                occasionally and always replacing the lid, for about 10 minutes, or until the pasta is
+                                tender.</li>
+                            <li>Once the pasta is tender, add the pasta sauce to the pot and stir to combine. Top with
+                                the shredded cheese then place the lid back on the pot. Let the pasta heat for a few
+                                minutes, or just until the cheese is melted. Serve hot!</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column" id="column-1">
+            <li>
+                <ul id="footer-logo">
+                    <a href="index.html">head over meals.</a>
+                </ul>
+                <ul>
+                    <a href="#">ABOUT US</a>
+                </ul>
+                <ul>
+                    <a href="#">OFFICIAL PARTNERS</a>
+                </ul>
+                <ul>
+                    <a href="#">FAQ</a>
+                </ul>
+                <ul>
+                    <a href="#">CONTACT US</a>
+                </ul>
+                <ul>
+                    <a href="#">DOWNLOAD OUR APP</a>
+                </ul>
+            </li>
+        </div>
+
+        <div class="footer-column" id="footer-column-2">
+            <ul>
+                <a href="#">TERMS & CONDITIONS</a>
+            </ul>
+            <ul>
+                <a href="#">PRIVACY POLICY</a>
+            </ul>
+            <ul>
+                <a href="#">COOKIES POLICY</a>
+            </ul>
+        </div>
+
+        <div class="footer-column" id="footer-column-3">
+            <ul>
+                SUBSCRIBE TO OUR NEWSLETTER
+            </ul>
+            <ul>
+                <form action="#">
+                    <label for="newsletter-email">Email:</label>
+                    <input type="text" id="email"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </ul>
+            <ul>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </ul>
+        </div>
+    </footer>
+    <script src="/Javascript/article_3_recipes.js"></script>
+
+</body>
+
+</html>

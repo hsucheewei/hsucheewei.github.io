@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Stylesheets/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@800&family=Noto+Serif+Display:ital,wght@1,800&family=Oswald:wght@300;400&family=Noto+Serif+Display:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="Javascript/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Main Page Button -->
+    <div class="nav-container">
+    <div class="logo" id="logo-home">
+      <a href="index.html" id="homepage">head over meals.</a>
+    </div>
+    <a href="javascript:void(0);" class="burger" onclick="burgerMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navigationbar" id="navbar">
+      <a href="article_1_podcast.html" id="navbar-podcast">PODCAST</a>
+      <a href="article_2_reviews.html" id="navbar-reviews">REVIEWS</a>
+      <a href="article_3_recipes.html" id="navbar-recipes">RECIPES</a>
+      <a href="article_4_food.html" id="navbar-food">FOOD</a>
+      <a href="article_5_explore.html" id="navbar-tour">TOUR</a>
+      <a href="report.html" id="navbar-report">REPORT</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Hamburger Navigation Bar -->
+  <div class="mobilenav">
+    <div id="mobileLinks">
+      <a href="article_1_podcast.html" id="navbar-podcast">PODCAST</a>
+      <a href="article_2_reviews.html" id="navbar-reviews">REVIEWS</a>
+      <a href="article_3_recipes.html" id="navbar-recipes">RECIPES</a>
+      <a href="article_4_food.html" id="navbar-food">FOOD</a>
+      <a href="article_5_explore.html" id="navbar-tour">TOUR</a>
+      <a href="report.html" id="navbar-report">REPORT</a>
+    </div>
+  </div>
+
+  <!-- Main page linked to all 5 articles -->
+  <section class="main-content" id="main">
+
+    <!-- Main Article Banner -->
+    <div class="banner">
+      <a href="article_1_podcast.html">
+        <article class="banner-article" id="article1">
+          <div class="podcast-banner">
+            <img src="images/index/podcastbanner.png" class="thatsfood" alt="Image not found" width="100%"
+              height="auto">
+          </div>
+          <h2 class="banner-text">Tune in to our weekly podcast special!</h2>
+        </article>
+      </a>
+    </div>
+
+    <!-- Other Articles -->
+    <div class="more-articles">
+      <h2>
+        MORE ARTICLES
+      </h2>
+    </div>
+
+    <div class="container">
+      <div class="item" id="item-1">
+        <a href="article_2_reviews.html">
+          <article class="article" id="article2">
+            <div class="article-image" id="article2_image">
+              <img src="images/index/article2image.jpg" alt="Image not found">
+            </div>
+            <h3 class="article-title">Kooks Creamery Review: Burst Of Flavors</h3>
+          </article>
+        </a>
+      </div>
+
+      <div class="item" id="item-2">
+        <a href="article_3_recipes.html">
+          <article class="article" id="article3">
+            <div class="article-image" id="article3_image">
+              <img src="images/index/article3image.jpg" alt="Image not found">
+            </div>
+            <h3 class="article-title">4 Easy Must-Try Recipes To Make At Home</h3>
+          </article>
+        </a>
+      </div>
+
+      <div class="item" id="item-3">
+        <a href="article_4_food.html">
+          <article class="article" id="article4">
+            <div class="article-image" id="article4_image">
+              <img src="images/index/article4image.png" alt="Image not found">
+            </div>
+            <h3 class="article-title">Top 7 Restaurants in Town You Need To Try</h3>
+          </article>
+        </a>
+      </div>
+
+      <div class="item" id="item-4">
+        <a href="article_5_explore.html">
+          <article class="article" id="article5">
+            <div class="article-image" id="article5_image">
+              <img src="images/index/article5image.jpg" alt="Image not found">
+            </div>
+            <h3 class="article-title">Explore Singaporean Food With A Food Tour</h3>
+          </article>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-column" id="column-1">
+        <li>
+          <ul id="footer-logo">
+            <a href="index.html">head over meals.</a>
+          </ul>
+          <ul>
+            <a href="#">ABOUT US</a>
+          </ul>
+          <ul>
+            <a href="#">OFFICIAL PARTNERS</a>
+          </ul>
+          <ul>
+            <a href="#">FAQ</a>
+          </ul>
+          <ul>
+            <a href="#">CONTACT US</a>
+          </ul>
+          <ul>
+            <a href="#">DOWNLOAD OUR APP</a>
+          </ul>
+        </li>
+      </div>
+
+      <div class="footer-column" id="footer-column-2">
+        <ul>
+          <a href="#">TERMS & CONDITIONS</a>
+        </ul>
+        <ul>
+          <a href="#">PRIVACY POLICY</a>
+        </ul>
+        <ul>
+          <a href="#">COOKIES POLICY</a>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="footer-column-3">
+        <ul>
+          SUBSCRIBE TO OUR NEWSLETTER
+        </ul>
+        <ul>
+          <form action="#">
+            <label for="newsletter-email">Email:</label>
+            <input type="text" id="email"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </ul>
+        <ul>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </ul>
+      </div>
+    </footer>
+  </section>
+
+
+</body>
+
+</html>

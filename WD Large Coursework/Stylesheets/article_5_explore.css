@@ -1,0 +1,299 @@
+:root {
+    --main-color: #eee2dc;
+    --navbar-color: #edc7b7;
+}
+
+/*LOGO*/
+.logo {
+    padding: 2vh;
+    align-self: center;
+    margin: 0 auto;
+    background-color: #edc7b7;
+    transition: 0.3s;
+}
+
+#homepage {
+    font-family: "Noto Serif Display", serif;
+    font-size: 5vw;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+}
+
+#homepage:hover {
+    border-bottom: 1px solid black;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #bab2b5;
+}
+
+.navigationbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+.navigationbar a {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: vw;
+}
+
+.nav-container {
+    display: flex;
+    background-color: #edc7b7;
+}
+
+#mobileLinks {
+    display: none;
+    background-color: #edc7b7;
+    text-align: center;
+}
+
+.mobilenav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Oswald";
+    font-size: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+    border-bottom: 0.5px solid rgba(50, 50, 50, 0.1);
+}
+
+.burger {
+    color: black;
+    position: relative;
+    align-self: center;
+    display: none;
+}
+
+
+@media screen and (max-width:800px) {
+    .navigationbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        padding: 2vw 2vw 2vw 10vw;
+    }
+}
+
+/*remove space between nav bar and body*/
+body {
+    margin: 0;
+    background-color: #eee2dc;
+}
+
+/*header styles*/
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Oswald";
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+/*highlight button when hovering*/
+nav a:hover {
+    background-color: #ac3b61;
+    color: white;
+}
+
+/* Add a background color to the top navigation */
+.navigationbar {
+    background-color: var(--navbar-color);
+    overflow: hidden;
+}
+
+/*===================================================*/
+
+/*FOOTER*/
+footer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: center; */
+    background-color: #123c69;
+    color: white;
+    font-family: "Oswald";
+    padding: 2em 0;
+}
+
+#footer-logo {
+    font-family: "Noto Serif Display", serif;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 0;
+}
+
+footer ul a {
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* social media icons */
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* remove underline for all links */
+a {
+    text-decoration: none;
+}
+
+/*BANNER*/
+.food-banner {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-color: #123c69;
+    margin: 0;
+    font-family: "Noto Serif Display";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+.main-content {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #bab2b5;
+}
+
+.map {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    height: 40vw;
+}
+
+.map-points {
+    padding: 0 15px;
+    color: white;
+    font-weight: 100;
+}
+
+.map-points h4 {
+    font-family: "Noto Serif Display";
+    font-size: 30px;
+    margin: 0;
+    font-weight: 100;
+}
+
+.map-points ol {
+    font-family: "Oswald";
+    font-size: 18px;
+    padding: 10px 0 10px 40px;
+    margin: 0;
+}
+
+.map-points li {
+    padding: 5px 0;
+}
+
+.places {
+    padding: 10px 15px;
+    font-family: "Oswald";
+    font-weight: 100;
+    color: white;
+}
+
+.places h2 {
+    font-weight: 100;
+    font-family: "Noto Serif Display";
+    margin: 0;
+    padding: 10px 0 5px 0;
+    border-top: 1px solid;
+}
+
+.places p {
+    margin: 0;
+    padding: 5px 15px;
+}
+
+.img-container {
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.img-container img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    transition: ease-out 0.2s;
+    padding: 15px 0;
+}
+
+/* MEDIA QUERIES FOR MOBILE DEVICES */
+/* IPHONE 12 PRO, SAMSUNG GALAXY S20 ULTRA */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+
+    .map {
+        height: 100vw;
+    }
+}
+
+/* IPHONE SE, IPHONE XR, PIXEL 5 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .map {
+        height: 100vw;
+    }
+}
+
+/* SAMSUNG GALAXY S8+ */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .map {
+        height: 100vw;
+    }
+}
